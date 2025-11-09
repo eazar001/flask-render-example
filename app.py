@@ -35,7 +35,7 @@ def db_create():
 
 
 @app.route('/db_insert')
-def db_create():
+def db_insert():
     with connect_db_service() as conn:
         cur = conn.cursor()
         cur.execute(
