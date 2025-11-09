@@ -75,7 +75,7 @@ def db_drop():
     with connect_db_service() as conn:
         cur = conn.cursor()
         cur.execute("DROP TABLE Basketball")
-        cur.commit()
+        conn.commit()
     
     return 'Basketball Table Successfully Dropped'
 
